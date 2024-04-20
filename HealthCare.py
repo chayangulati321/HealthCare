@@ -9,6 +9,7 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+np.random.seed(7)
 # Set page configuration
 st.set_page_config(page_title="Health Care",
                    layout="wide",
