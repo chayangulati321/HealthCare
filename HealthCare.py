@@ -131,10 +131,10 @@ if selected == 'Revenue Prediction':
         patient_risk_profile = st.selectbox("Patient Risk Profile", tuple(risk_dict.keys()))
 
     with col1:
-        minutes_to_service = st.number_input("Minutes to Service", min_value=0, max_value=500)
+        minutes_to_service = st.number_input("Minutes to Service", min_value=0, max_value=120)
 
     with col2:
-        days_in_hospital = st.number_input("Days in Hospital", min_value=0, max_value=30)
+        days_in_hospital = st.number_input("Days in Hospital", min_value=0, max_value=366)
 
     with col1:
         hospital_branch = st.selectbox("Hospital Branch", data.columns[data.columns.str.startswith('Hospital Branch_')])
