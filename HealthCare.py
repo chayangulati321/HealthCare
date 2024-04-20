@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import seaborn as sns
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
