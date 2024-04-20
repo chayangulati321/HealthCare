@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
@@ -80,15 +80,15 @@ if selected == 'Overview':
     st.subheader('Description of the Hospital Dataset')
     st.write(df.describe())
     st.text(" ")
-    plt.figure(figsize=(8,3))
+    #plt.figure(figsize=(8,3))
     st.subheader("Department Type wise Revenue")
     bar_chart1 = sns.barplot(x='Department Type', y='Revenue', data=df)
     st.pyplot(bar_chart1.get_figure())
     
     st.text(" ")
     st.text(" ")
-    plt.figure(figsize=(8,3))
-    plt.xticks(rotation=90)
+    #plt.figure(figsize=(8,3))
+    #plt.xticks(rotation=90)
     st.subheader("Department wise Days in Hospital")
     bar_chart2 = sns.barplot(x='Department', y='Days in Hospital', data=df)
     st.pyplot(bar_chart2.get_figure())
