@@ -1,7 +1,7 @@
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-streamlit
-streamlit_option_menu
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install seaborn
+pip install scikit-learn
+pip install streamlit
+pip install streamlit_option_menu
